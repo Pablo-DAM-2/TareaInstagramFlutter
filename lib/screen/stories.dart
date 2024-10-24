@@ -22,6 +22,7 @@ class Stories extends StatelessWidget {
               const Text(
                 'Me',
                 style: TextStyle(
+                  fontFamily: 'ComicSans',
                   fontSize: 14,
                 ),
               ),
@@ -41,6 +42,7 @@ class Stories extends StatelessWidget {
               const Text(
                 'Travels',
                 style: TextStyle(
+                  fontFamily: 'ComicSans',
                   fontSize: 14,
                 ),
               ),
@@ -60,6 +62,7 @@ class Stories extends StatelessWidget {
               const Text(
                 'Friends',
                 style: TextStyle(
+                  fontFamily: 'ComicSans',
                   fontSize: 14,
                 ),
               ),
@@ -78,6 +81,7 @@ class Stories extends StatelessWidget {
               const Text(
                 'Málaga',
                 style: TextStyle(
+                  fontFamily: 'ComicSans',
                   fontSize: 14,
                 ),
               ),

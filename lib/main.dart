@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: Padding(
-          padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.only(bottom: 10),
           child: Footer(),
         ),
       ),

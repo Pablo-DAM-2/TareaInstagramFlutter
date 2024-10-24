@@ -30,13 +30,17 @@ class Info extends StatelessWidget {
                     Text(
                       '10',
                       style: TextStyle(
+                        fontFamily: 'ComicSans',
                         fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
                       'Posts',
                       style: TextStyle(
+                        fontFamily: 'ComicSans',
                         fontSize: 14,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ]),
@@ -46,13 +50,17 @@ class Info extends StatelessWidget {
                     Text(
                       '377',
                       style: TextStyle(
+                        fontFamily: 'ComicSans',
                         fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
                       'Followers',
                       style: TextStyle(
+                        fontFamily: 'ComicSans',
                         fontSize: 14,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ]),
@@ -62,13 +70,17 @@ class Info extends StatelessWidget {
                     Text(
                       '605',
                       style: TextStyle(
+                        fontFamily: 'ComicSans',
                         fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
                       'Following',
                       style: TextStyle(
+                        fontFamily: 'ComicSans',
                         fontSize: 14,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ]),
@@ -84,6 +96,7 @@ class Info extends StatelessWidget {
         const Text(
           'Pablo 🐢',
           style: TextStyle(
+            fontFamily: 'ComicSans',
             fontSize: 16,
           ),
         ),
@@ -91,13 +104,14 @@ class Info extends StatelessWidget {
         //Ubicacion
         const Text(
           '🚩 Málaga.',
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontFamily: 'ComicSans', fontSize: 16),
         ),
 
         //DAM
         const Text(
           '💻 DAM',
           style: TextStyle(
+            fontFamily: 'ComicSans',
             fontSize: 16,
           ),
         ),
@@ -107,12 +121,16 @@ class Info extends StatelessWidget {
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               minimumSize: const Size(400, 25),
+              backgroundColor: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
               ),
             ),
             onPressed: () {},
-            child: const Text('Edit profile'),
+            child: const Text(
+              'Edit profile',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
         )
       ],
