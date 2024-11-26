@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Stories extends StatelessWidget {
+  final Function(int) onIconTap; // Callback para notificar qué pantalla mostrar
+  final int selectedScreenIndex; // Índice de la pantalla seleccionada
+
+  const Stories({required this.onIconTap, required this.selectedScreenIndex});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -127,9 +132,24 @@ class Stories extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
-        const Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [Icon(Icons.grid_on), Icon(Icons.person_outline)],
+          children: [
+            GestureDetector(
+              onTap: () => onIconTap(0),
+              child: Icon(
+                Icons.grid_on,
+                color: selectedScreenIndex == 0 ? Colors.blue : Colors.black,
+              ),
+            ),
+            GestureDetector(
+              onTap: () => onIconTap(1),
+              child: Icon(
+                Icons.person_outline,
+                color: selectedScreenIndex == 1 ? Colors.blue : Colors.black,
+              ),
+            ),
+          ],
         ),
         const SizedBox(height: 10),
       ],

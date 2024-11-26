@@ -75,6 +75,9 @@ flutter:
     - assets/images/friends.jpg
     - assets/images/malaga.jpg
     - assets/images/catan.png
+    - assets/images/phone.png
+    - assets/images/joker.png
+    - assets/images/john pork.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

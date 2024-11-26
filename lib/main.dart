@@ -3,13 +3,21 @@ import 'screen/header.dart';
 import 'screen/info.dart';
 import 'screen/stories.dart';
 import 'screen/posts.dart';
+import 'screen/mentions.dart';
 import 'screen/footer.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  int _selectedScreenIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,8 +38,15 @@ class MyApp extends StatelessWidget {
           child: ListView(
             children: [
               Info(),
-              Stories(),
-              Posts(),
+              Stories(
+                onIconTap: (index) {
+                  setState(() {
+                    _selectedScreenIndex = index;
+                  });
+                },
+                selectedScreenIndex: _selectedScreenIndex,
+              ),
+              _selectedScreenIndex == 0 ? Posts() : Mentions(),
             ],
           ),
         ),
